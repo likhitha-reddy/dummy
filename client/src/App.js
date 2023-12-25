@@ -7,8 +7,8 @@ function App() {
   const getData=
   async () => {
       
-    const response = await axios.get("http://localhost:5000/api/get");
-    setText(response.data.message);
+    const response = await axios.get("http://localhost:5000/api/get").then(response=>
+    setText(response.data.message));
 
 }
   useEffect(() => 
