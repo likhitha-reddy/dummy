@@ -8,9 +8,9 @@ function App() {
   async () => {
       
     const response = await axios.get("http://localhost:5000/api/get").then(response=>
-    {setText(response.data.message),
+    (setText(response.data.message),
       console.log(response.data.message)
-    });
+    ));
 
 }
   
