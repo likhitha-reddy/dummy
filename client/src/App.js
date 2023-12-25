@@ -8,7 +8,7 @@ function App() {
   async () => {
       
     const response = await axios.get("/api/get")
-      console.log(response.data.message)
+      console.log(response)
   
 
 }
