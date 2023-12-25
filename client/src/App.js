@@ -7,7 +7,7 @@ function App() {
   const getData=
   async () => {
       
-    const response = await axios.get("http://localhost:5000/api/get").then(response=>
+    const response = await axios.get("/api/get").then(response=>
     (setText(response.data.message),
       console.log(response.data.message)
     ));
