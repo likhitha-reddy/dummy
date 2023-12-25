@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 onclick={getData}>CLICK ME</h1>
+        <button onclick={getData}>CLICK ME</button>
        <h1>{text}</h1>
       </header>
     </div>
