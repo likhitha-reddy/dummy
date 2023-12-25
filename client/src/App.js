@@ -8,7 +8,6 @@ function App() {
   async () => {
       
     const response = await axios.get("/api/get")
-    setText(response.data.message),
       console.log(response.data.message)
   
 
