@@ -8,7 +8,7 @@ function App() {
   async () => {
       
     const response = await axios.get("/api/get")
-      console.log(response)
+      console.log(response.data.message)
   
 
 }
@@ -16,7 +16,7 @@ function App() {
   return (
     <div >
       
-        <button onclick={getData}>CLICK ME</button>
+        <button onClick={getData}>CLICK ME</button>
        <h1>{text}</h1>
 
     </div>
