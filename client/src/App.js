@@ -7,10 +7,10 @@ function App() {
   const getData=
   async () => {
       
-    const response = await axios.get("/api/get").then(response=>
-    (setText(response.data.message),
+    const response = await axios.get("/api/get")
+    setText(response.data.message),
       console.log(response.data.message)
-    ));
+  
 
 }
   
